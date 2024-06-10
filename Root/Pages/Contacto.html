@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/Contacto.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <section class="section-header">
+        <a href="../index.html">
+          <img
+            class="logo-header"
+            src="../Imagenes/zarla-sueo-pastelero-1x1-2400x2400-20210614-mdx9778mj9djmr7dg8vd.png"
+            alt="Logo  Pastelero"
+          />
+        </a>
+      </section>
+
+      <nav class="nav-header">
+        <ul class="ul-header">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/RecetasSaladas.html">Recetas saladas</a></li>
+          <li><a href="../Pages/RecetasDulces.html">Recetas Dulces</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="../Datos/Datos.php" method="post">
+        <fieldset class="contenedor-form">
+          <legend>"Dejanos tus datos"</legend>
+          <label for="Nombre">Nombre:</label>
+          <input type="text" name="Nombre" id="Nombre" />
+          <label for="Apellido">Apellido:</label>
+          <input type="text" name="Apellido" id="Apellido" />
+          <label for="email">Correo electrónico</label>
+          <input type="email" name="email" id="email" />
+          <label for="fecha">Fecha de nacimiento</label>
+          <input class="fecha" type="date" name="fecha" id="fecha" />
+          <section class="section-button">
+            <button type="submit">Enviar</button>
+          </section>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <section class="section0">
+        <img
+          class="logo-header"
+          src="../Imagenes/zarla-sueo-pastelero-1x1-2400x2400-20210614-mdx9778mj9djmr7dg8vd.png"
+          alt="Logo sueño paastelero"
+        />
+      </section>
+      <section class="section1"></section>
+
+      <section class="section-footer">
+        <section class="section-redes">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </section>
+      </section>
+      <section class="section-footer">
+        <section class="section-footer2">
+          <p>Términos y condiciones</p>
+          <p>Aviso de privacidad</p>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+}
+.section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ul-header{
+    width: 40%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+ }
+ .ul-header li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.ul-header li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+ .logo-header{
+    width: 100px;
+    color: aliceblue;
+}
+
+
+body{
+    background-color: rgb(245, 241, 235);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo-header{
+    width: 100px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 36px;
+    background-color: aqua;
+   
+}
+.banner {
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Imagenes/lemon-pie-receta-oficial-casancrem.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4; /* Opacidad de la imagen de fondo */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    color: black; /* Color del texto */
+    font-size: 40px;
+}
+.section-main{
+    display: flex;
+    justify-content: center;
+}
+.section-cards{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
+    
+   
+    
+}
+.card h4 {
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+.card {
+    width: 25%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.card img{
+    width: 240px;
+    height: 240px;}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+   
+.section0{
+    display: flex;
+
+    justify-content: center;
+  
+
+}
+.section1{
+    display: flex;
+
+    justify-content: center;
+  
+    color: rgb(245, 241, 235);
+    display: block;
+     width: 50%;
+  
+}
+.section-footer{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    width: 100%;
+}       
+ .section-redes{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+    padding-top: 20px;
+  
+
+ }
+ .section-footer2{
+    display: flex;
+    justify-content: space-around;
+ }
+    
+ @media (max-width: 1024px) {
+    .ul-header {
+        width: 60%;
+    }
+ 
+    .section-cards{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ul-header {
+        width: 80%;
+    }
+    .img-banner {
+        width: 90vw;
+    }
+    .card {
+        width: 45%;
+    }
+    .section-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ul-header {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .img-banner {
+        width: 100%;
+    }
+    .card {
+        width: 90%;
+    }
+    .section-cards {
+        width: 100%;
+    }
+}
